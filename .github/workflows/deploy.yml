@@ -24,8 +24,8 @@ jobs:
     # 3️⃣ Déployer sur le serveur
     - name: Deploy to server
       run: |
-        ssh user@IP_DU_SERVEUR "
-          cd /chemin/vers/le/projet &&    # remplacer par le chemin réel sur le serveur
+        ssh ubuntu@192.168.174.157 "
+          cd C:\Users\user\Documents\Virtual Machines &&    # remplacer par le chemin réel sur le serveur
           git pull &&
           source venv/bin/activate &&     # ou venv\Scripts\activate sur Windows
           pip install -r requirements.txt &&
