@@ -1,0 +1,161 @@
+/* Reset et base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* Dark mode variables */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --btn-primary-bg: #0d6efd;
+  --btn-primary-color: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e1e1e1;
+  --btn-primary-bg: #1a73e8;
+  --btn-primary-color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  padding-top: 6rem;
+}
+
+/* Typewriter effect */
+.typewriter {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  0%, 50% {
+    border-color: white;
+  }
+  51%, 100% {
+    border-color: transparent;
+  }
+}
+
+/* Cards project carousel */
+.carousel .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.carousel .card:hover {
+  transform: translateY(-10px);
+}
+
+/* List group styles */
+.list-group-item {
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .list-group-item {
+  border-color: #444;
+  background-color: #1e1e1e;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .social-icons a {
+    font-size: 2rem;
+  }
+}
+
+
+/* Dark mode button */
+#darkToggle {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero .lead {
+    font-size: 1.25rem;
+  }
+}
+
+.contact-item a.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-item a.btn:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 576px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .contact-item i {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-item a.btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card-title i {
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}

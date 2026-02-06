@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Papa Madialé Fall - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Papa Madialé Fall</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3">
+            <!-- <button id="darkToggle" class="btn btn-sm btn-outline-light" title="Basculer en mode sombre">🌙</button> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center text-center" style="min-height: 85vh; padding-top: 80px;">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">Papa Madialé Fall</h1>
+      <p class="lead fs-3">
+        <span class="typewriter" data-text="Administrateur réseau & système|Programmeur informatique|Développeur web"></span>
+      </p>
+      <a href="#projets" class="btn btn-primary btn-lg mt-4 shadow">Voir mes projets</a>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">À propos de moi</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 fs-5 text-center">
+          <p>
+            Passionné par l'informatique, je suis administrateur réseau et système, programmeur informatique et développeur web.
+            J’aime relever des défis techniques, sécuriser des infrastructures réseaux, et coder des solutions innovantes.
+            Curieux et autodidacte, je cherche constamment à apprendre les dernières technologies pour apporter le meilleur dans mes projets.
+          </p>
+          <p>
+            N’hésitez pas à parcourir mes projets et à me contacter pour toute collaboration ou opportunité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+<section id="projets" class="py-5 bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Mes Projets</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><i class="fas fa-network-wired me-2 text-primary"></i>Gestion réseau sécurisé</h5>
+            <p class="card-text flex-grow-1">Mise en place d'une infrastructure réseau sécurisée avec pare-feu, VLAN et VPN.</p>
+            <a href="https://github.com/tonrepo1" target="_blank" class="btn btn-outline-primary mt-3">Voir sur GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><i class="fas fa-desktop me-2 text-primary"></i>Système de Recrutement en Ligne</h5>
+            <p class="card-text flex-grow-1">une plateforme de recrutement qui connectent les talents aux meilleures entreprises</p>
+            <a href="https://github.com/tonrepo2" target="_blank" class="btn btn-outline-primary mt-3">Voir sur GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><i class="fas fa-code me-2 text-primary"></i>Site Portfolio</h5>
+            <p class="card-text flex-grow-1">Développement d’un site portfolio personnel en HTML, CSS, Bootstrap et JavaScript.</p>
+            <a href="https://github.com/tonrepo3" target="_blank" class="btn btn-outline-primary mt-3">Voir sur GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Compétences -->
+  <section id="competences" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Compétences</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush fs-5 shadow" style="border-radius: 8px;">
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Configuration et administration Routeur, Switch et Modem Wifi</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Installation et Configuration hub et Capteur Aqara</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Installation et Configuration Caméra de surveillance</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Administration des Serveurs Linux et Windows</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Assurer la sécurité et la disponibilité du réseau (VPN, Pare-feu)</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Développement WordPress</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Programmation (avec python, JAVA)</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Développement web (HTML, CSS, PHP, JavaScript)</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Gestion de bases de données (SQL)</li>
+            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Maitrise des logiciels Bureautique(Word, Excel, Power point, Access)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact" class="py-5 bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Contactez-moi</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="d-flex align-items-center mb-4 contact-item">
+          <i class="fas fa-envelope fa-lg me-3 text-primary"></i>
+          <a href="mailto:papamadialefall@gmail.com" class="btn btn-outline-dark flex-fill text-start">
+            papamadialefall@gmail.com
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center mb-4 contact-item">
+          <i class="fab fa-linkedin fa-lg me-3 text-primary"></i>
+          <a href="https://linkedin.com/in/papamadialefall@gmail.com" target="_blank" rel="noopener" class="btn btn-outline-dark flex-fill text-start">
+            linkedin.com/in/Madialé Fall
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center mb-4 contact-item">
+          <i class="fas fa-file-download fa-lg me-3 text-primary"></i>
+          <a href="{{ url_for('static', filename='files/mon_cv.pdf') }}" target="_blank">
+    Télécharger mon CV
+</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- footer -->
+  <footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+    <p class="mb-3">© 2025 Papa Madialé Fall. Tous droits réservés.</p>
+
+    <div class="social-icons d-flex justify-content-center flex-wrap gap-3">
+      <a href="https://instagram.com/papa_diale_fall" target="_blank" class="social-icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com/tonprofil" target="_blank" class="social-icon" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://youtube.com/@tonchaine" target="_blank" class="social-icon" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://twitter.com/tonprofil" target="_blank" class="social-icon" title="Twitter">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <a href="https://wa.me/221781664212" target="_blank" class="social-icon" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script perso -->
+  <script src="script.js"></script>
+  <!-- AOS Library for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
